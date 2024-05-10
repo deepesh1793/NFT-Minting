@@ -16,7 +16,7 @@ cd nfts/dip721-nft-container
 Start the dfx replica locally:
 ```
 dfx start --background --clean
-``
+```
 Deploy the dip_nft_container canister (Note that the arguments can vary)
 ```
 dfx deploy --argument 'record{name="DFX Blobs";symbol="DFXB";custodians=null;logo=null}' dip721_nft_container
