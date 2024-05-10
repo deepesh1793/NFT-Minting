@@ -3,11 +3,14 @@ This is a project to implement a dapp built on the ICP, which allows the user to
 ---
 ##Explanation
 The project uses DIP721 as the standard for the nft-minting process. The **dip721-nft-container** is responsible for minting of nfts. It contains a canister __dip_nft_container__ which is responsible for the implementation of dip721 standard. **The minting-tool** is used to mint images to the principal id of the owner.
+
 The **nft-wallet** module is intended to serve the purpose of porviding the wallet functionality to the dapp. It includes a canister __nftwallet__ to serve this purpose. This module also contains the frontend canister to serve as the UI for the dapp. Internet_identity is used to authorize the user to login using internet identity (this will be modified to use NFID for authoriZation).
 
-##How to Use?
+## How to Use?
+
 Clone this repository:
-```git clone https://github.com/deepesh1793/NFT-Minting.git
+```
+git clone https://github.com/deepesh1793/NFT-Minting.git
 cd nfts/dip721-nft-container
 ```
 Start the dfx replica locally:
