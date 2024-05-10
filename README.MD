@@ -36,4 +36,4 @@ cd ../
 cd nft-wallet
 dfx deploy --no-wallet --argument null
 ```
-**The frontend part of the dapp is not fully functional yet**
+**NOTE: The frontend part of the dapp is not fully functional yet**
