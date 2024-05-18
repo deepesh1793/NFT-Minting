@@ -43,7 +43,7 @@ cd wallet/frontend/
 npm run dev
 ```
 Authorize the wallet:
-...
+```
 dfx canister call '(<nft-wallet canister id>)' set_authorized '(principal "<Principal of wallet>",true)'
 ```
 Transfer the collection to wallet
