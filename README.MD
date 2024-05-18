@@ -32,8 +32,24 @@ minting-tool local "$(dfx canister id dip721_nft_container)" --owner "$(dfx iden
 ```
 Time to deploy the nftwallet canister:
 ```
-cd ../
+cd ../../
 cd nft-wallet
-dfx deploy --no-wallet --argument null
+dfx deploy --no-wallet
 ```
-**NOTE: The frontend part of the dapp is not fully functional yet**
+Run the frontend:
+```
+cd ../
+cd wallet/frontend/
+npm run dev
+```
+Authorize the wallet:
+...
+dfx canister call '(<nft-wallet canister id>)' set_authorized '(principal "<Principal of wallet>",true)'
+```
+Transfer the collection to wallet
+```
+cd ../
+cd nfts/dip721-nft-container/
+dfx identity get-principal
+dfx call dip721-nft-container transferFromNotifyDip721 "(principal \"<dfx identitiy principal>\",principal \"<NFT Wallet Canister ID>\",0:nat64,vec{0:nat8})"
+```
