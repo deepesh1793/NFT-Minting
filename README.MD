@@ -44,12 +44,12 @@ npm run dev
 ```
 Authorize the wallet:
 ```
-dfx canister call '(<nft-wallet canister id>)' set_authorized '(principal "<Principal of wallet>",true)'
+dfx canister call '<nft-wallet canister id>' set_authorized '(principal "<Principal of wallet>",true)'
 ```
 Transfer the collection to wallet
 ```
 cd ../
 cd nfts/dip721-nft-container/
 dfx identity get-principal
-dfx call dip721-nft-container transferFromNotifyDip721 "(principal \"<dfx identitiy principal>\",principal \"<NFT Wallet Canister ID>\",0:nat64,vec{0:nat8})"
+dfx canister call dip721-nft-container transferFromNotifyDip721 "(principal \"<dfx identitiy principal>\",principal \"<NFT Wallet Canister ID>\",0:nat64,vec{0:nat8})"
 ```
