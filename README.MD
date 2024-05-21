@@ -1,4 +1,6 @@
 # NFT-MINTING PLATFORM
+
+[Demo video](https://www.loom.com/share/a59528f9d3124cd090f582b4e3ff30d5?sid=633086c3-0b3b-41e3-8ebe-2fa0aa78a92a)
 This is a project to implement a dapp built on the ICP, which allows the user to login using NFID and mint an nft into their wallet.
 ---
 ## Explanation
